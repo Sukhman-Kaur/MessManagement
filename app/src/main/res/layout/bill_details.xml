@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/billDetails"
+    android:layout_marginBottom="300dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/images">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Details"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Total Extra :"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:textSize="18dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/tExtra"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Account Off :"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".07"
+            android:textSize="18dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/tAccount"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".23"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="days"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="35dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="Total Bill :"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:textSize="18dp"
+            android:hint=" ------"
+            android:layout_height="wrap_content"
+            android:id="@+id/tBill"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send Bill"
+        android:id="@+id/sendBill"/>
+
+
+</LinearLayout>

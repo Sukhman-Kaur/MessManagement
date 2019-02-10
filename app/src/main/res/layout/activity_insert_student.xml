@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InsertStudentActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/aqua">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Details!!"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="26dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="serif"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameWrapper"
+        android:background="@color/LightBlue"
+        android:textColorHint="@color/Red"
+        >
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Name"
+            android:layout_marginBottom="16dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneWrapper"
+        android:background="@color/LightBlue"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/Red"
+        >
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Enter Phone"
+            android:layout_marginBottom="16dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/view"
+    android:background="@color/LightBlue"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:text="Year:"
+        android:textSize="20dp"
+        android:textColor="@color/Red" />
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:hint=" Year"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight=".20"
+    android:text="Acc_Id:"
+    android:textSize="20dp"
+        android:textColor="@color/Red"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:hint="Enter Acc_Id"
+        android:textSize="20dp"
+        android:id="@+id/eAccId"
+        android:inputType="phone"
+         />
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

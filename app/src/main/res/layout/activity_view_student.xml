@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ViewStudentActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bill"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/grey"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student's Record"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:fontFamily="monospace"
+            android:textSize="26dp"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:text="id"
+        android:id="@+id/Id"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:text="Acc_id"
+        android:id="@+id/acc_id"
+        android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Year"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_marginLeft="16dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Black"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/Bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Monthly Bill Details"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:background="@color/White"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/Black"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="65dp"
+        />
+
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:stretchColumns="*"
+        android:background="@color/White">
+        <TableRow>
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+    <!--<ListView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/listView2"></ListView>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:text="Generate Pdf"
+        android:onClick="generatePdf"
+        android:textColor="@color/White"
+        android:background="@color/grey"
+        android:layout_marginRight="8dp"
+        />
+
+    <Button
+        android:id="@+id/bill"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:text="Generate Bill"
+        android:textColor="@color/White"
+        android:background="@color/grey"/>
+</LinearLayout>
+
+</LinearLayout>

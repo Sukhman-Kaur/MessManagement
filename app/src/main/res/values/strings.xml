@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mess App</string>
+    <string name="tab_text_1">First</string>
+    <string name="tab_text_2">Second</string>
+    <string name="tab_text_3">Third</string>
+    <string name="tab_text_4">Fourth</string>
+    <string name="action_settings">Price</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
